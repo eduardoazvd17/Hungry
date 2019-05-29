@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorRed"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:backgroundTint="@color/colorWhite"
+                android:id="@+id/btnMapaVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/icone_voltar"/>
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:id="@+id/txtEndereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereco do restaurante selecionado"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+        <WebView
+            android:id="@+id/wvMapa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
